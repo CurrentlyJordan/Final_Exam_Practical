@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Final_Exam_Practical</string>
+    <string name="username_text_hint">Username</string>
+    <string name="password_text_hint">Password</string>
+    <string name="button_1">Button 1</string>
+    <string name="button_2">Button 2</string>
+    <string name="button_3">Button 3</string>
+    <string name="button_4">Button 4</string>
+    <string name="toast_message_enter_username">Enter a username</string>
+    <string name="toast_message_enter_password">Enter a password</string>
+    <string name="toast_select_heart_activity">Selected Heart Activity</string>
+    <string name="toast_select_message_activity">Selected Message Activity</string>
+    <string name="toast_select_logout_activity">Selected Logout Activity</string>
+    <string name="setting_text_before_number">Setting - </string>
+
+</resources>

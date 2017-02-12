@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/activity_profile"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/header_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="@dimen/height_of_header_navigation_drawer">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_header_icon"
+                android:layout_width="@dimen/icon_size_header_image"
+                android:layout_height="@dimen/icon_size_header_image"
+                android:background="@color/header_color">
+            </ImageView>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
