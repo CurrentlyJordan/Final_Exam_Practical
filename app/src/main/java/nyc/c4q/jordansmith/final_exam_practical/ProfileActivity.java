@@ -73,7 +73,7 @@ public class ProfileActivity extends AppCompatActivity implements Listener, View
     @Override
     public void button4Action() {
         Toast.makeText(getApplicationContext(), R.string.toast_select_logout_activity, Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, LoginScreen.class);
+        Intent intent = new Intent(this, LoginScreenActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.putExtra("Exit me", true);
         startActivity(intent);

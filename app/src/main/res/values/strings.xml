@@ -12,5 +12,6 @@
     <string name="toast_select_message_activity">Selected Message Activity</string>
     <string name="toast_select_logout_activity">Selected Logout Activity</string>
     <string name="setting_text_before_number">Setting - </string>
+    <string name="submimt_button_text">Submit</string>
 
 </resources>
