@@ -33,7 +33,7 @@ public class ProfileActivity extends AppCompatActivity implements Listener, View
     }
 
 
-    void initViews(){
+    void initViews() {
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         imageButton_1 = (ImageButton) findViewById(R.id.button_1);
         imageButton_2 = (ImageButton) findViewById(R.id.button_2);
@@ -45,7 +45,7 @@ public class ProfileActivity extends AppCompatActivity implements Listener, View
         imageButton_4.setOnClickListener(this);
     }
 
-    void fillList(){
+    void fillList() {
         drawerButtonList.add(ButtonType.BUTTON1);
         drawerButtonList.add(ButtonType.BUTTON2);
         drawerButtonList.add(ButtonType.BUTTON3);
@@ -53,17 +53,14 @@ public class ProfileActivity extends AppCompatActivity implements Listener, View
     }
 
 
-
-
-
     @Override
     public void button1Action() {
-        Toast.makeText(getApplicationContext(),R.string.toast_select_heart_activity, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), R.string.toast_select_heart_activity, Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void button2Action() {
-        Toast.makeText(getApplicationContext(),R.string.toast_select_message_activity, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), R.string.toast_select_message_activity, Toast.LENGTH_SHORT).show();
 
     }
 
@@ -75,7 +72,7 @@ public class ProfileActivity extends AppCompatActivity implements Listener, View
 
     @Override
     public void button4Action() {
-        Toast.makeText(getApplicationContext(),R.string.toast_select_logout_activity, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), R.string.toast_select_logout_activity, Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, LoginScreen.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.putExtra("Exit me", true);
@@ -85,7 +82,7 @@ public class ProfileActivity extends AppCompatActivity implements Listener, View
 
     @Override
     public void onClick(View v) {
-        switch(v.getId()){
+        switch (v.getId()) {
             case R.id.button_1:
                 button1Action();
                 break;

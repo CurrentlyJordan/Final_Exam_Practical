@@ -12,16 +12,14 @@ public class SettingsAdapter extends RecyclerView.Adapter<SettingsViewHolder> {
 
     String numberText;
 
-    SettingsAdapter(String numberText){
+    SettingsAdapter(String numberText) {
         this.numberText = numberText;
     }
 
 
-
-
     @Override
     public SettingsViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-       TextView textView = new TextView(parent.getContext());
+        TextView textView = new TextView(parent.getContext());
         return new SettingsViewHolder(textView);
     }
 

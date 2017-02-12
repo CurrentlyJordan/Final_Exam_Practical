@@ -20,8 +20,8 @@ public class DrawerViewHolder extends RecyclerView.ViewHolder {
         textView = (TextView) itemView.findViewById(R.id.item_view_button_text);
     }
 
-    public void onBind(final ButtonType buttonNumber, final Listener listener){
-        switch(buttonNumber){
+    public void onBind(final ButtonType buttonNumber, final Listener listener) {
+        switch (buttonNumber) {
             case BUTTON1:
                 imageView.setImageResource(R.drawable.ic_drawer_button_1);
                 textView.setText(R.string.button_1);
@@ -44,7 +44,7 @@ public class DrawerViewHolder extends RecyclerView.ViewHolder {
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (buttonNumber){
+                switch (buttonNumber) {
                     case BUTTON1:
                         listener.button1Action();
                         break;

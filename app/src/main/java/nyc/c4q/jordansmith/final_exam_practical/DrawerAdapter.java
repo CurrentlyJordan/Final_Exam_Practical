@@ -16,14 +16,14 @@ public class DrawerAdapter extends RecyclerView.Adapter<DrawerViewHolder> {
     List<ButtonType> drawerButtons;
     Listener listener;
 
-    DrawerAdapter(List<ButtonType> drawerButtons, Listener listener){
+    DrawerAdapter(List<ButtonType> drawerButtons, Listener listener) {
         this.drawerButtons = drawerButtons;
         this.listener = listener;
     }
 
     @Override
     public DrawerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View childView = LayoutInflater.from(parent.getContext()).inflate(R.layout.drawer_item_view,parent,false);
+        View childView = LayoutInflater.from(parent.getContext()).inflate(R.layout.drawer_item_view, parent, false);
 
         return new DrawerViewHolder(childView);
     }

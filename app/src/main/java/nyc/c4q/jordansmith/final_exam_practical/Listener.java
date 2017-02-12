@@ -7,7 +7,10 @@ package nyc.c4q.jordansmith.final_exam_practical;
 public interface Listener {
 
     void button1Action();
+
     void button2Action();
+
     void button3Action();
+
     void button4Action();
 }
