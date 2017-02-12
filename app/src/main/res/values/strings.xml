@@ -5,7 +5,7 @@
     <string name="button_1">Button 1</string>
     <string name="button_2">Button 2</string>
     <string name="button_3">Button 3</string>
-    <string name="button_4">Button 4</string>
+    <string name="button_4">Logout</string>
     <string name="toast_message_enter_username">Enter a username</string>
     <string name="toast_message_enter_password">Enter a password</string>
     <string name="toast_select_heart_activity">Selected Heart Activity</string>

@@ -19,6 +19,10 @@ public class LoginScreen extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login__screen);
 
+        if( getIntent().getBooleanExtra("Exit me", false)){
+            finish();
+        }
+
         initButtons();
 
         submitButton.setOnClickListener(new View.OnClickListener() {

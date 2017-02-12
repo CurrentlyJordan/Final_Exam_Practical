@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start">
         <LinearLayout
-            android:layout_gravity="center"
+            android:background="@color/header_color"
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="@dimen/height_of_header_navigation_drawer">
@@ -20,8 +20,7 @@
                 android:src="@drawable/ic_header_icon"
                 android:layout_width="@dimen/icon_size_header_image"
                 android:layout_height="@dimen/icon_size_header_image"
-                android:background="@color/header_color">
-            </ImageView>
+                android:background="@color/header_color"/>
         </LinearLayout>
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerview"

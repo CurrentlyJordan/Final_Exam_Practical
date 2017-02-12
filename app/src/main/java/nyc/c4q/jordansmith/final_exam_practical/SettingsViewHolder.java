@@ -1,6 +1,7 @@
 package nyc.c4q.jordansmith.final_exam_practical;
 
 import android.support.v7.widget.RecyclerView;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 /**
@@ -13,5 +14,6 @@ public class SettingsViewHolder extends RecyclerView.ViewHolder {
     public SettingsViewHolder(TextView itemView) {
         super(itemView);
         textView = itemView;
+        textView.setLayoutParams(new RecyclerView.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
     }
 }
